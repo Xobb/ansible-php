@@ -1,0 +1,24 @@
+galaxy_info:
+  author: Paul Chubatyy
+  description: Deploy php-cli and php-fpm to your servers
+  license: MIT
+  min_ansible_version: 2.0
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+    - lucid
+    - maverick
+    - natty
+    - oneiric
+    - precise
+    - quantal
+    - raring
+    - saucy
+    - trusty
+    - utopic
+    - vivid
+    - wily
+    - xenial
+  galaxy_tags: [php, fpm, cli, nginx]
+dependencies: []

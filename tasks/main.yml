@@ -1,0 +1,17 @@
+---
+- name: Add php7.0 ppa
+  apt_repository: repo=ppa:ondrej/php update_cache=yes
+  environment:
+    LC_ALL: en_US.UTF-8
+
+- name: Install PHP Packages
+  become: true
+  apt: pkg={{ item }} state=latest
+  with_items: php_packages
+  when: php_packages is defined
+
+- include: configure.yml
+- include: composer.yml
+
+- include: development.yml
+  when: php_install_dev == true
