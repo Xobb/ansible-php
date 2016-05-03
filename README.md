@@ -36,3 +36,8 @@ License
 -------
 
 BSD
+
+Author Information
+------------------
+
+Part-time devops, you should be very careful when using my roles.
